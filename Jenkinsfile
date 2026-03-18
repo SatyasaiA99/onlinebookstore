@@ -42,7 +42,7 @@ pipeline {
                 sh '''
                     docker stop onlinebookstore || true
                     docker rm onlinebookstore || true
-                    docker run -d -p 7979:8080 --name onlinebookstore ${IMAGE_NAME}:latest
+                    docker run -d -p 9595:8080 --name onlinebookstore ${IMAGE_NAME}:latest
                 '''
             }
         }
